@@ -373,6 +373,6 @@ variable "force_destroy" {
 }
 
 variable "elb_scheme" {
-  default     = "internal"
-  description = "Whether the load balancer should be 'internal' or 'public'"
+  default     = ""
+  description = "Specify `internal` if you want to create an internal load balancer in your Amazon VPC so that your Elastic Beanstalk application cannot be accessed from outside your Amazon VPC"
 }
